@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample(ls)", "RunWSL\RunWSL.vcxproj", "{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxitems", "{EF44598C-1438-451C-8828-0D87268270CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Debug|x64.ActiveCfg = Debug|x64
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Debug|x64.Build.0 = Debug|x64
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Debug|x86.Build.0 = Debug|Win32
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x64.ActiveCfg = Release|x64
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x64.Build.0 = Release|x64
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x86.ActiveCfg = Release|Win32
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6B249F2-DADB-4FBF-B6A3-83D496C30425}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Common\Common.vcxitems*{b9df416f-f8a3-4cab-96d7-20f7cd685cdb}*SharedItemsImports = 4
+		Common\Common.vcxitems*{ef44598c-1438-451c-8828-0d87268270cd}*SharedItemsImports = 9
+	EndGlobalSection
+EndGlobal
