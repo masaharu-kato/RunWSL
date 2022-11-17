@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample(ls)", "RunWSL\RunWSL.vcxproj", "{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RunWSL", "RunWSL\RunWSL.vcxproj", "{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxitems", "{EF44598C-1438-451C-8828-0D87268270CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "app_ls", "app_ls\app_ls.vcxproj", "{EDAE620A-B962-44D1-9CE8-9C7E3652186F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB} = {B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "app_pwd", "app_pwd\app_pwd.vcxproj", "{D0A0E00A-3989-4187-8290-B46D2731CF8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB} = {B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,15 +31,27 @@ Global
 		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x64.Build.0 = Release|x64
 		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x86.ActiveCfg = Release|Win32
 		{B9DF416F-F8A3-4CAB-96D7-20F7CD685CDB}.Release|x86.Build.0 = Release|Win32
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Debug|x64.ActiveCfg = Debug|x64
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Debug|x64.Build.0 = Debug|x64
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Debug|x86.Build.0 = Debug|Win32
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Release|x64.ActiveCfg = Release|x64
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Release|x64.Build.0 = Release|x64
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Release|x86.ActiveCfg = Release|Win32
+		{EDAE620A-B962-44D1-9CE8-9C7E3652186F}.Release|x86.Build.0 = Release|Win32
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Debug|x64.ActiveCfg = Debug|x64
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Debug|x64.Build.0 = Debug|x64
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Debug|x86.Build.0 = Debug|Win32
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Release|x64.ActiveCfg = Release|x64
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Release|x64.Build.0 = Release|x64
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Release|x86.ActiveCfg = Release|Win32
+		{D0A0E00A-3989-4187-8290-B46D2731CF8A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D6B249F2-DADB-4FBF-B6A3-83D496C30425}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Common\Common.vcxitems*{b9df416f-f8a3-4cab-96d7-20f7cd685cdb}*SharedItemsImports = 4
-		Common\Common.vcxitems*{ef44598c-1438-451c-8828-0d87268270cd}*SharedItemsImports = 9
 	EndGlobalSection
 EndGlobal
